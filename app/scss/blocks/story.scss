@@ -1,0 +1,41 @@
+.story{
+  margin-bottom: 60px;
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 29px;
+    line-height: 35px;
+    color: $text;
+    margin-bottom: 35px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    min-height: 536px;
+  }
+  &__img{
+    margin-right: 10px;
+    max-width: 536px;
+  }
+  &__text{
+    width: 536px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCEAE9;
+  }
+  &__quote{
+    font-size: 24px;
+    line-height: 32px;
+    color: $text;
+    max-width: 408px;
+    margin-bottom: 30px;
+  }
+  &__author{
+    font-size: 12px;
+    line-height: 16px;
+    color: $text;
+  }
+
+}

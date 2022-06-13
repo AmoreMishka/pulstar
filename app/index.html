@@ -1,15 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulstar</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+<svg class="hidden" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="cart" viewBox="0 0 17 17" fill="none">
+        <path
+            d="M2.60593 2H0V0H4.39407L4.84288 4H16V9.93845L3.76941 12.3694L2.60593 2ZM15.5 17C14.6716 17 14 16.3284 14 15.5C14 14.6716 14.6716 14 15.5 14C16.3284 14 17 14.6716 17 15.5C17 16.3284 16.3284 17 15.5 17ZM5.5 17C4.67157 17 4 16.3284 4 15.5C4 14.6716 4.67157 14 5.5 14C6.32843 14 7 14.6716 7 15.5C7 16.3284 6.32843 17 5.5 17Z"
+            fill="black" />
+    </symbol>
+</svg>
+
 <body>
-
-
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo" src="images/logo.png" alt="logo img">
+                </a>
+                <nav class="menu">
+                    <ul class="header__menu">
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">Journal</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">Shop</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="menu__link" href="#">Buy Template</a>
+                    <div class="menu__nav">
+                        <a class="menu__nav-link" href="#">
+                            <svg class="icon__cart">
+                                <use xlink:href="#cart"></use>
+                            </svg>
+                        </a>
+                        <span class="menu__nav-num">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <div class="top__image">
+                        <div class="top__image-menu">
+                            <p class="top__image-text">
+                                Shop hundreds of enamel pins from artists.
+                            </p>
+                            <div class="top__image-btn">
+                                <a class="top__image-link" href="#">Shop everything</a>
+                                <a class="top__image-link" href="#">Browse collections</a>
+                            </div>
+                        </div>
+                        <img class="top__image-img" src="images/top-img.jpg" alt="top image">
+                    </div>
+                    <div class="top__descr">
+                        <span class="top__descr-slogan">Ready, Set, Go</span>
+                        <p class="top__descr-text">
+                            Shop hundreds of enamel pins from artists. The best cool pin badges to decorate your
+                            backpack, denim jean jacket, lapel, and festival hat for sale in our online store.
+                        </p>
+                        <div class="top__descr-advan">
+                            <div class="top__descr-item">
+                                <img class="top__descr-img" src="images/top/make.png" alt="top image icon">
+                                <h5 class="top__descr-title">Free Artwork</h5>
+                                <p class="top__descr-speech">
+                                    Free digital proofs and best design advice
+                                </p>
+                            </div>
+                            <div class="top__descr-item">
+                                <img class="top__descr-img" src="images/top/yeah.png" alt="top image icon">
+                                <h5 class="top__descr-title">Lower Minimum</h5>
+                                <p class="top__descr-speech">
+                                    You can always start with 50 pcs here
+                                </p>
+                            </div>
+                            <div class="top__descr-item">
+                                <img class="top__descr-img" src="images/top/bang.png" alt="top image icon">
+                                <h5 class="top__descr-title">100% Guarantee</h5>
+                                <p class="top__descr-speech">
+                                    Get excellent pins or have your money back
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="container">
+                <div class="shop__items">
+                    <div class="shop__item">
+                        <img class="shop__item-img" src="images/shop/item-1.jpg" alt="shop img">
+                        <div class="shop__item-text">
+                            <span class="shop__item-name">Hard BOILED Egg and Avocado</span>
+                            <span class="shop__item-price">$ 7.99 USD</span>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <img class="shop__item-img" src="images/shop/item-2.jpg" alt="shop img">
+                        <div class="shop__item-text">
+                            <span class="shop__item-name">BOMB! Enamel Pin</span>
+                            <span class="shop__item-price">$ 7.12 USD</span>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <img class="shop__item-img" src="images/shop/item-3.jpg" alt="shop img">
+                        <div class="shop__item-text">
+                            <span class="shop__item-name">Pineapple Charm Pendant</span>
+                            <span class="shop__item-price">$ 9.99 USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__links">
+                    <div class="shop__links-inner">
+                        <div class="shop__link-item" style="background-image: url(images/shop/shop-1.jpg) ;">
+                            <a class="shop__link" href="#">
+                                <h3 class="shop__link-title">Shop all</h3>
+                                <span class="shop__link-text">Explore everything</span>
+                            </a>
+                        </div>
+                        <div class="shop__link-item" style="background-image: url(images/shop/shop-2.jpg) ;">
+                            <a class="shop__link" href="#">
+                                <h3 class="shop__link-title">Browse collection</h3>
+                                <span class="shop__link-text">Get started</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="story">
+            <div class="container-box">
+                <h4 class="story__title">Get the rest of the story</h4>
+                <div class="story__box">
+                    <img class="story__img" src="images/story.jpg" alt="story img">
+                    <div class="story__text">
+                        <blockquote class="story__quote">
+                            “Best templates and support out there! They are always happy to help with any issues you may
+                            be
+                            having or even just showing how to edit things.”
+                        </blockquote>
+                        <span class="story__author">Sam (Trustpilot)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors">
+            <div class="container">
+                <div class="sponsors__inner">
+                    <div class="sponsors__item">
+                        <img class="sponsors__img" src="images/sponsors/1.png" alt="sponsor img">
+                        <p class="sponsors__text">“Great communication and help from him. Thank you.”</p>
+                    </div>
+                    <div class="sponsors__item">
+                        <img class="sponsors__img" src="images/sponsors/2.png" alt="sponsor img">
+                        <p class="sponsors__text">"Best templates & support out there!"</p>
+                    </div>
+                    <div class="sponsors__item">
+                        <img class="sponsors__img" src="images/sponsors/3.png" alt="sponsor img">
+                        <p class="sponsors__text">“Fantastic designer and web developer... but above all great people"
+                        </p>
+                    </div>
+                    <div class="sponsors__item">
+                        <img class="sponsors__img" src="images/sponsors/4.png" alt="sponsor img">
+                        <p class="sponsors__text">“Great communication with detailed screen shots.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="journal">
+            <div class="container-box">
+                <div class="journal__inner">
+                    <div class="journal__name name" style="background-image: url(images/journal/journal-bg.jpg) ;">
+                        <div class="name__inner">
+                            <span class="name__date">February 26, 2022</span>
+                            <h4 class="name__title">
+                                14 Common Misconceptions About Web Design
+                            </h4>
+                            <p class="name__text">
+                                Laboriosam et a quis. Ut quae rem consequatur omnis autem incidunt
+                                vitae. Recusandae voluptatem
+                            </p>
+                            <a class="name__btn" href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="journal__articles articles">
+                        <h2 class="articles__title">Journal</h2>
+                        <span class="articles__subtitle">Read the latest</span>
+                        <div class="articles__list">
+                            <div class="articles__item">
+                                <img class="articles__item-img" src="images/journal/1.jpg" alt="article img">
+                                <div class="articles__item-descr">
+                                    <span class="articles__item-date">February 26, 2022</span>
+                                    <a class="articles__item-name" href="#">
+                                        What Will Website Be Like In 100 Years?
+                                    </a>
+                                    <p class="articles__item-text">
+                                        Ut aut natus consectetur est quam assumenda porro ut. Sit blanditiis et.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="articles__item">
+                                <img class="articles__item-img" src="images/journal/2.jpg" alt="article img">
+                                <div class="articles__item-descr">
+                                    <span class="articles__item-date">February 26, 2022</span>
+                                    <a class="articles__item-name" href="#">
+                                        7 of the Best Examples of Beautiful Blog Design
+                                    </a>
+                                    <p class="articles__item-text">
+                                        Ea in ad impedit repellat. Est iure iure et quis aut enim. Ipsam temporibus
+                                        culpa
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="articles__item">
+                                <img class="articles__item-img" src="images/journal/3.jpg" alt="article img">
+                                <div class="articles__item-descr">
+                                    <span class="articles__item-date">February 26, 2022</span>
+                                    <a class="articles__item-name" href="#">
+                                        7 Things About Web Design Your Boss Wants To Know
+                                    </a>
+                                    <p class="articles__item-text">
+                                        Dignissimos iste voluptas reprehenderit mollitia nemo distinctio assumenda sequi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <h4 class="footer__top-title">Celebrating the perfectly imperfect</h4>
+                <div class="footer__top-gallery">
+                    <img class="footer__top-img" src="images/footer/1.jpg" alt="footer gallery img">
+                    <img class="footer__top-img" src="images/footer/2.jpg" alt="footer gallery img">
+                    <img class="footer__top-img" src="images/footer/3.jpg" alt="footer gallery img">
+                    <img class="footer__top-img" src="images/footer/4.jpg" alt="footer gallery img">
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-subscribe subscribe ">
+                    <p class="subscribe__text">Subscribe for stories and new product announcements.</p>
+                    <input type="email" class="subscribe__input">
+                </div>
+                <div class="footer__bottom-shop footer__shop">
+                    <span class="footer__shop-name">Shop</span>
+                    <ul class="footer__shop-list">
+                        <li class="footer__shop-item">
+                            <a class="footer__shop-link" href="#">All products</a>
+                        </li>
+                        <li class="footer__shop-item">
+                            <a class="footer__shop-link" href="#">Fruit</a>
+                        </li>
+                        <li class="footer__shop-item">
+                            <a class="footer__shop-link" href="#">Custom</a>
+                        </li>
+                        <li class="footer__shop-item">
+                            <a class="footer__shop-link" href="#">Cute</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom-learn learn">
+                    <span class="learn__name">Learn</span>
+                    <ul class="learn__list">
+                        <li class="learn__item">
+                            <a class="learn__link" href="#">Home</a>
+                        </li>
+                        <li class="learn__item">
+                            <a class="learn__link" href="#">Shop</a>
+                        </li>
+                        <li class="learn__item">
+                            <a class="learn__link" href="#">About us</a>
+                        </li>
+                        <li class="learn__item">
+                            <a class="learn__link" href="#">Journal</a>
+                        </li>
+                        <li class="learn__item">
+                            <a class="learn__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom-template template">
+                    <span class="template__name">Template</span>
+                    <ul class="template__list">
+                        <li class="template__item">
+                            <a class="template__link" href="#">Style Guide</a>
+                        </li>
+                        <li class="template__item">
+                            <a class="template__link" href="#">Instructions</a>
+                        </li>
+                        <li class="template__item">
+                            <a class="template__link" href="#">Licensing</a>
+                        </li>
+                        <li class="template__item">
+                            <a class="template__link" href="#">Changelog</a>
+                        </li>
+                        <li class="template__item">
+                            <a class="template__link" href="#">More Templates</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy copy">
+                <div class="copy__left">
+                    <span class="copy__text">© Pulstar powered by</span>
+                    <a class="copy__link" href="#">Webflow</a>
+                </div>
+                <a class="menu__link footer__copy-link" href="#">Buy Template</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
