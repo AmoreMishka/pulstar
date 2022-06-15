@@ -5,6 +5,10 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 65px;
+
+    @media(max-width:1200px) {
+      justify-content: center;
+    }
   }
 
   &__image-menu {
@@ -19,6 +23,17 @@
     font-size: 33px;
     line-height: 42px;
     padding: 0 70px 65px;
+
+    @media(max-width:1200px) {
+      justify-content: center;
+      align-items: center;
+      max-width: 900px;
+    }
+
+    @media(max-width:800px) {
+      max-width: 400px;
+      font-size: 26px;
+    }
   }
 
   &__image-text {
@@ -28,6 +43,10 @@
   &__image-btn {
     display: flex;
     justify-content: space-between;
+
+    @media(max-width:600px) {
+      flex-direction: column;
+    }
   }
 
   &__image-link {
@@ -52,6 +71,10 @@
   &__image-img {
     width: 770px;
     height: 560px;
+
+    @media(max-width:1200px) {
+      display: none;
+    }
   }
 
   &__descr {
@@ -74,10 +97,18 @@
     max-width: 700px;
     width: 100%;
     text-align: center;
+
+    @media(max-width:800px) {
+      max-width: 400px;
+    }
   }
 
   &__descr-advan {
     display: flex;
+
+    @media(max-width:800px) {
+      flex-direction: column;
+    }
   }
 
   &__descr-item {
@@ -86,8 +117,14 @@
     align-items: center;
     max-width: 245px;
     width: 100%;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 40px;
+
+      @media(max-width:800px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -107,6 +144,6 @@
     line-height: 16px;
     color: $text;
     text-align: center;
-    width:240px;
+    width: 240px;
   }
 }

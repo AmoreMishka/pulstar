@@ -10,12 +10,33 @@
     line-height: 32px;
     max-width: 320px;
     margin-bottom: 35px;
+
+    @media(max-width:1300px) {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   &__top-gallery {
     display: flex;
     justify-content: space-between;
     margin-bottom: 65px;
+
+    @media(max-width:1300px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:1300px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__top-img {
+    @media(max-width:1300px) {
+      margin: 15px auto;
+    }
   }
 
   &__bottom {
@@ -24,16 +45,33 @@
     padding-bottom: 35px;
     border-bottom: 2px solid #373436;
     margin-bottom: 30px;
+
+    @media(max-width:1200px) {
+      flex-direction: column;
+    }
   }
-  &__copy-link{
+
+  &__copy-link {
     background-color: $accent;
     color: $main;
     padding: 9px 12px 7px;
     margin-right: 180px;
+
+    @media(max-width:600px) {
+      margin: 0;
+    }
   }
 }
 
 .subscribe {
+  @media(max-width:1200px) {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
   &__text {
     color: $main;
     font-size: 24px;
@@ -41,84 +79,137 @@
     max-width: 438px;
     margin-bottom: 60px;
   }
-  &__input{
-  background-color: TRANSPARENT;
-  border: none;
-  border-bottom: 2px solid #fff;
-  width: 512px;
-  color: $main;
-  font-size: 16px;
+
+  &__input {
+    background-color: TRANSPARENT;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 512px;
+    color: $main;
+    font-size: 16px;
+
+    @media(max-width:600px) {
+      width: 300px;
+    }
+    @media(max-width:400px) {
+      width: 200px;
+    }
   }
 }
-.footer__shop{
-  &-name{
+
+.footer__shop {
+  @media(max-width:1200px){
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &-name {
     font-size: 16px;
     line-height: 21px;
     color: $main;
     display: block;
     margin-bottom: 15px;
+    @media(max-width:1200px){
+      color: $accent;
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
-  &-link{
+
+  &-link {
     font-size: 16px;
     line-height: 21px;
     color: $main;
   }
-  &-item{
-    &:not(:last-child){
+
+  &-item {
+    &:not(:last-child) {
       margin-bottom: 5px;
     }
   }
 }
-.learn{
-  &__name{
+
+.learn {
+  @media(max-width:1200px){
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__name {
     font-size: 16px;
     line-height: 21px;
     color: $main;
     display: block;
     margin-bottom: 15px;
+    @media(max-width:1200px){
+      color: $accent;
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
-  &__item{
-    &:not(:last-child){
+
+  &__item {
+    &:not(:last-child) {
       margin-bottom: 5px;
     }
   }
-  &__link{
+
+  &__link {
     font-size: 16px;
     line-height: 21px;
     color: $main;
   }
 }
-.template{
-  &__name{
+
+.template {
+  @media(max-width:1200px){
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &__name {
     font-size: 16px;
     line-height: 21px;
     color: $main;
     display: block;
     margin-bottom: 15px;
+    @media(max-width:1200px){
+      color: $accent;
+      font-size: 28px;
+      line-height: 33px;
+    }
   }
-  &__item{
-    &:not(:last-child){
+
+  &__item {
+    &:not(:last-child) {
       margin-bottom: 5px;
     }
   }
-  &__link{
+
+  &__link {
     font-size: 16px;
     line-height: 21px;
     color: $main;
   }
 }
-.copy{
+
+.copy {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
-  &__text{
+
+  &__text {
     font-size: 16px;
     line-height: 21px;
     color: $main;
     margin-right: 15px;
   }
-  &__link{
+
+  &__link {
     font-size: 16px;
     line-height: 21px;
     color: $accent;

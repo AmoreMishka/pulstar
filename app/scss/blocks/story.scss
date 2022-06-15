@@ -12,10 +12,23 @@
     display: flex;
     justify-content: space-between;
     min-height: 536px;
+    @media(max-width:1200px){
+      margin: 0 15px;
+    }
   }
   &__img{
     margin-right: 10px;
     max-width: 536px;
+    object-fit: cover;
+    @media(max-width:1200px){
+      max-width: 500px;
+    }
+    @media(max-width:800px){
+      max-width: 350px;
+    }
+    @media(max-width:600px){
+     display: none;
+    }
   }
   &__text{
     width: 536px;
@@ -24,6 +37,9 @@
     align-items: center;
     justify-content: center;
     background-color: #DCEAE9;
+    @media(max-width:600px){
+      margin: 0 auto;
+    }
   }
   &__quote{
     font-size: 24px;
